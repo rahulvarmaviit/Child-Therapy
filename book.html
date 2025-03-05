@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Consultation</title>
+    <style>
+        .form-container { max-width: 500px; margin: 50px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, textarea, select { width: 100%; padding: 8px; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Book a Consultation</h2>
+        <form action="submit.php" method="post">
+            <div class="form-group">
+                <label>Parent/Guardian Name:</label>
+                <input type="text" name="parent_name" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone:</label>
+                <input type="tel" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label>Child's Name:</label>
+                <input type="text" name="child_name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Child's Age:</label>
+                <input type="number" name="age" min="0" required>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Date:</label>
+                <input type="date" name="preferred_date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Preferred Time:</label>
+                <input type="time" name="preferred_time" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

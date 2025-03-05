@@ -1,0 +1,242 @@
+/* General Styles */
+/* Ensure full background image */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('behavioral\ therapy\ for\ children.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Keep the overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Adjust opacity here */
+    z-index: -1;
+}
+
+/* Adjust main sections */
+.therapy-types, .qna-form {
+    margin-top: 10px; /* Reduce the gap from top */
+    padding: 30px; /* Ensure proper spacing inside */
+    text-align: center; /* Center align content */
+}
+
+
+/* Therapy Section */
+.therapy-types {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Therapy Cards (Centering text & improving padding) */
+.therapy-card {
+    background: white;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.therapy-card:hover {
+    transform: scale(1.05);
+    border-color: #007BFF;
+}
+header{
+    text-align: center;
+}
+hr {
+    border: none;  /* Removes default styling */
+    height: 1px;  /* Thickness of the line */
+    background-color: black;  /* Change color */
+    margin: 20px auto;  /* Adjust spacing */
+    width: 100%;  /* Line width */
+}
+
+/* Q&A Form (Better Spacing & Layout) */
+.qna-form {
+    background: white;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Spacing for the questions */
+.question {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.question.active {
+    display: flex;
+    opacity: 1;
+}
+
+/* Labels and Dropdowns */
+label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Centering Dropdown */
+select {
+    width: 90%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Navigation Buttons (Centering and Spacing) */
+.next-btn, .prev-btn {
+    width: 50%;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+.footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-section {
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-section h4 {
+    color: #bdc3c7;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-links li,
+.contact-info li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-links a,
+.contact-info {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 2rem 0 0;
+    border-top: 1px solid #34495e;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .footer-links,
+    .contact-info {
+        justify-content: center;
+    }
+}
