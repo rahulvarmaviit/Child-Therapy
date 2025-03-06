@@ -23,12 +23,11 @@ body {
 .header {
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    top: 0;
+    position: sticky; /* ✅ Added this */
+    top: 0;           /* ✅ Added this */
     z-index: 900;
-    height: auto;
     padding: 1rem 2rem;
 }
-
 .header-section {
     display: flex;
     align-items: center;
@@ -43,6 +42,7 @@ body {
     padding: 1rem 5%;
     max-width: 1400px;
     margin: 0 auto;
+    width: 100%;      /* ✅ Ensures full-width coverage */
 }
 
 /* Mobile Menu Styles */
@@ -84,16 +84,13 @@ body {
 
     .navbar {
         padding: 0.5rem 2%;
-    }
-
-    .hamburger {
-        display: block;
+        width: 100%;  /* ✅ Maintain full width on mobile */
     }
 
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 70px;    /* Adjust based on header height */
         flex-direction: column;
         background: white;
         width: 100%;
@@ -101,6 +98,10 @@ body {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
+    .hamburger {
+        display: block;
+    }
+}
 
     .nav-menu.active {
         left: 0;
