@@ -119,43 +119,7 @@ body {
     }
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
 
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px; /* Adjust based on your header height */
-        flex-direction: column;
-        background: white;
-        width: 100%;
-        padding: 1rem 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-menu li {
-        margin: 1rem 0;
-        text-align: center;
-    }
-
-    .nav-menu a {
-        padding: 0.5rem 1rem;
-        display: block;
-        width: 100%;
-    }
-
-    .nav-menu a:hover {
-        background-color: rgba(0, 0, 0, 0.05);
-    }
-}
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
