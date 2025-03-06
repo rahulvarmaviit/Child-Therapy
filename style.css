@@ -17,6 +17,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    max-width: 1400px;
 }
 
 /* Header Section */
@@ -42,7 +43,11 @@ body {
     padding: 1rem 5%;
     max-width: 1400px;
     margin: 0 auto;
-    width: 100%;      /* ✅ Ensures full-width coverage */
+    position: sticky; /* Use 'sticky' for smooth scrolling */
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Mobile Menu Styles */
@@ -104,8 +109,6 @@ body {
 }
 
     .nav-menu.active {
-        position: fixed;
-        width: 100%;
         left: 0;
     }
 
@@ -139,8 +142,6 @@ body {
     }
 
     .nav-menu.active {
-        position: fixed;
-        width: 100%;
         left: 0;
     }
 
@@ -196,8 +197,6 @@ body {
     }
     
     .nav-menu.active {
-        position: fixed;
-        width: 100%;
         left: 0;
     }
     
@@ -277,8 +276,6 @@ body {
     }
 
     .nav-menu.active {
-        position: fixed;
-        width: 100%;
         left: 0;
     }
 
