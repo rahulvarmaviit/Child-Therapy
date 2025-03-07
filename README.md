@@ -4,15 +4,15 @@
 ![Project Banner](images/ban.png)  
 
 ## Table of Contents  
-- [Overview](#overview)  
-- [Features](#features)  
-- [Tech Stack](#tech-stack)  
-- [Installation](#installation)  
-- [Usage](#usage)  
-- [Screenshots](#screenshots)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Acknowledgments](#acknowledgments)  
+- Overview  
+- Features  
+- Tech Stack
+- Installation  
+- Usage  
+- Screenshots  
+- Contributing  
+- License  
+- Acknowledgments  
 
 ---
 
