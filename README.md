@@ -1,7 +1,7 @@
 # 🌟 Vignan Child Therapy Centre  
 **A 24-hour Hackathon project for an SEO-optimized child therapy website**  
 
-![Project Banner](images/hero-bg.jpg)  
+![Project Banner](images/ban.png)  
 
 ## Table of Contents  
 - [Overview](#overview)  
