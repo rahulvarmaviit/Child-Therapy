@@ -1,5 +1,6 @@
 # 🌟 Vignan Child Therapy Centre  
 **A 24-hour Hackathon project for an SEO-optimized child therapy website**  
+**Preview - https://childtherapy.netlify.app
 
 ![Project Banner](images/ban.png)  
 
@@ -114,4 +115,4 @@ Guidelines:
 ---
 
 ##📄 License
-This project is licensed under the MIT License - see LICENSE.md for details.
+This project is licensed under the Apache License 2.0 - see LICENSE.md for details.
