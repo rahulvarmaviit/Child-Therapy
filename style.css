@@ -1,4 +1,7 @@
 /* General Styles */
+html, body {
+  overflow-x: hidden;
+}
 :root {
     --primary-color: #4A90E2;
     --secondary-color: #50C878;
