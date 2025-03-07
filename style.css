@@ -149,7 +149,7 @@ body {
     }
 }
 .hero {
-    background: linear-gradient(rgba(113, 113, 113, 0.4), rgba(117, 117, 117, 0.4)),
+    background: linear-gradient(rgba(240, 57, 57, 0.279), rgba(117, 117, 117, 0.4)),
     url('hero-bg.jpg') center/cover;
     height: 75vh;
     display: flex;
