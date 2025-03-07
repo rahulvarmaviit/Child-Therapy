@@ -90,10 +90,12 @@ Blog:
 ---
 
 ##📸 Screenshots
-Desktop View	Mobile View
-Desktop	Mobile
-Service Cards	Testimonials
-Services	Testimonials
+![Project Banner](images/rev.png)  
+![Project Banner](images/exp.png)  
+![Project Banner](images/oth.png)
+![Project Banner](images/ser.png)  
+
+
 
 ---
 
