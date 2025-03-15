@@ -8,7 +8,7 @@
 - Overview  
 - Features  
 - Tech Stack
-- Installation  
+- Installation
 - Usage  
 - Screenshots  
 - Contributing  
