@@ -392,16 +392,31 @@ body {
     gap: 4rem; /* Space between logo and menu */
 }
 
-/* Mobile view adjustments */
+ /* Mobile view adjustments */
+
 @media (max-width: 768px) {
     .logo {
         max-width: 120px; /* Smaller logo on mobile */
     }
     
     .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
         padding: 0.5rem 5%;
+        background-color: white; /* Ensure visibility */
+        display: flex; /* Corrected from flexbox */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body {
+        padding-top: 60px; /* Adjust based on navbar height */
     }
 }
+
 
 @media (max-width: 480px) {
     .logo {
